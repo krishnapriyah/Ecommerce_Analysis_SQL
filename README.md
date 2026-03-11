@@ -57,11 +57,11 @@ ecommerce-sql-analysis/
 
 | Query | Business Question |
 |---|---|
-| INNER JOIN | Which customers have placed orders? |
-| LEFT JOIN | Show ALL customers including those with no orders |
-| LEFT JOIN + WHERE NULL | Which customers have NEVER ordered? |
-| 3-Table JOIN | Full order and payment details per customer |
-| Orders with no Payment | Which orders have missing payment records? |
+| INNER JOIN | 1. Which customers have placed orders? |
+| LEFT JOIN | 2. Show ALL customers including those with no orders |
+| LEFT JOIN + WHERE NULL | 3. Which customers have NEVER ordered? |
+| 3-Table JOIN | 4. Full order and payment details per customer |
+| Orders with no Payment | 5. Which orders have missing payment records? |
 
 **Key Learning:**
 - `INNER JOIN` → only matching rows from both tables
@@ -74,11 +74,11 @@ ecommerce-sql-analysis/
 
 | Query | Business Question |
 |---|---|
-| Find NULL emails | Which customers have no email on record? |
-| Find NULL ages | Which customers have missing age data? |
-| ISNULL() | Replace NULLs with default values for clean reporting |
-| COALESCE() | Show best available contact info per customer |
-| COUNT with NULLs | How many customers have missing data? |
+| Find NULL emails |6. Which customers have no email on record? |
+| Find NULL ages |7. Which customers have missing age data? |
+| ISNULL() |8.Replace NULLs with default values for clean reporting |
+| COALESCE() | 9. Show best available contact info per customer |
+| COUNT with NULLs |10.  How many customers have missing data? |
 
 **Key Learning:**
 - `NULL` is not zero or empty — it means value is **unknown**
@@ -93,11 +93,11 @@ ecommerce-sql-analysis/
 
 | Query | Business Question |
 |---|---|
-| Find duplicates | Are there any double-entered orders? |
-| View duplicate rows | Show full details of all duplicate records |
-| Remove duplicates | Keep only first occurrence using ROW_NUMBER() |
-| Count unique vs total | How many duplicate rows exist in the table? |
-| DISTINCT products | What are the unique products sold? |
+| Find duplicates | 11. Are there any double-entered orders? |
+| View duplicate rows | 12. Show full details of all duplicate records |
+| Remove duplicates | 13. Keep only first occurrence using ROW_NUMBER() |
+| Count unique vs total |14. How many duplicate rows exist in the table? |
+| DISTINCT products | 15. What are the unique products sold? |
 
 **Key Learning:**
 - Use `GROUP BY + HAVING COUNT(*) > 1` to detect duplicates
@@ -109,7 +109,7 @@ ecommerce-sql-analysis/
 
 ###  Section 4 — Final Combined Query
 
-Combined all 3 concepts into one clean business report:
+16. Combined all 3 concepts into one clean business report:
 - Removed duplicate orders using `ROW_NUMBER()` inside a CTE
 - Used `LEFT JOIN` to include customers with no orders
 - Used `ISNULL()` to handle missing city, email, and payment info
