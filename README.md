@@ -24,7 +24,7 @@ Three related tables were created to simulate a real e-commerce database:
 
 ```
 Customers    ────────────       Orders          ──────────── Payments
-(customer_id)            (customer_id, order_id)             (order_id)
+(customer_id)            (customer_id, order_id)             (order_id,payment_id)
 ```
 
 | Table | Rows | Key Feature |
