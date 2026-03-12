@@ -66,8 +66,6 @@ ecommerce-sql-analysis/
 - `LEFT JOIN` → all rows from left table + matches from right
 - `WHERE col IS NULL` after LEFT JOIN → finds records that don't exist in the second table
 ---
-**Results Preview**
-![Inner Join Result](Visuals/Query1_show_all_customers_with_orders.png)
 
 
 ###  Section 2 — NULLs
