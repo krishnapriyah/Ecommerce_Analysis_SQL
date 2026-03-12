@@ -61,6 +61,8 @@ ecommerce-sql-analysis/
 | LEFT JOIN + WHERE NULL | 3. Which customers have NEVER ordered? |
 | 3-Table JOIN | 4. Full order and payment details per customer |
 | Orders with no Payment | 5. Which orders have missing payment records? |
+
+
 **Key Learning:**
 - `INNER JOIN` → only matching rows from both tables
 - `LEFT JOIN` → all rows from left table + matches from right
@@ -77,6 +79,8 @@ ecommerce-sql-analysis/
 | ISNULL() |8.Replace NULLs with default values for clean reporting |
 | COALESCE() | 9. Show best available contact info per customer |
 | COUNT with NULLs |10.  How many customers have missing data? |
+
+
 **Key Learning:**
 - `NULL` is not zero or empty — it means value is **unknown**
 - Always use `IS NULL` not `= NULL`
@@ -94,6 +98,8 @@ ecommerce-sql-analysis/
 | Remove duplicates | 13. Keep only first occurrence using ROW_NUMBER() |
 | Count unique vs total |14. How many duplicate rows exist in the table? |
 | DISTINCT products | 15. What are the unique products sold? |
+
+
 **Key Learning:**
 - Use `GROUP BY + HAVING COUNT(*) > 1` to detect duplicates
 - Use `ROW_NUMBER() OVER (PARTITION BY ...)` to tag duplicates
@@ -109,6 +115,7 @@ ecommerce-sql-analysis/
 - Used `ISNULL()` to handle missing city, email, and payment info
 - Produced a **clean customer revenue summary** sorted by total spend
 ---
+
 ##  Key Insights
 -  **1 customer (Mohan Das)** had no orders and missing contact info — flagged for data cleanup
 -  **3 duplicate order pairs** were found — orders 1001/1002, 1011/1012, 1015/1016
