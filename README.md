@@ -43,10 +43,10 @@ ecommerce-sql-analysis/
 ├── sql/
 │   └── ecommerce_sql_analysis.sql    ← All queries in one file
 └── visuals/
-    ├── inner_join_result.png
-    ├── left_join_nulls.png
-    ├── duplicate_orders.png
-    └── final_combined_query.png
+    ├── Section-1 results in document
+    ├── Section-2 results in document
+    ├── Section-3 results in document
+    └── Section-4 results in document
 ```
 
 ---
