@@ -161,4 +161,4 @@ DUPLICATES:
 
 ---
 
-> 💬 *"Good data analysis starts with clean data — and clean data starts with handling NULLs, duplicates and proper joins."*
+> *"Good data analysis starts with clean data — and clean data starts with handling NULLs, duplicates and proper joins."*
