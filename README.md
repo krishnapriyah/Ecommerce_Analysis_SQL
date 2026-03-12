@@ -58,6 +58,7 @@ ecommerce-sql-analysis/
 | Query | Business Question |
 |---|---|
 | INNER JOIN | 1. Which customers have placed orders? |
+![Inner Join Result](Visuals/Query1_show_all_customers_with_orders.png)
 | LEFT JOIN | 2. Show ALL customers including those with no orders |
 | LEFT JOIN + WHERE NULL | 3. Which customers have NEVER ordered? |
 | 3-Table JOIN | 4. Full order and payment details per customer |
