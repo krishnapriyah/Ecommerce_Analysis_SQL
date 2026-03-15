@@ -95,9 +95,10 @@ ecommerce-sql-analysis/
 |---|---|
 | Find duplicates | 11. Are there any double-entered orders? |
 | View duplicate rows | 12. Show full details of all duplicate records |
-| Remove duplicates | 13. Keep only first occurrence using ROW_NUMBER() |
-| Count unique vs total |14. How many duplicate rows exist in the table? |
-| DISTINCT products | 15. What are the unique products sold? |
+| Remove duplicates | 13. Keep only first occurrence using ROW_NUMBER() -Hide duplicates|
+| Remove duplicates | 14. delete duplicates |
+| Count unique vs total |15. How many duplicate rows exist in the table? |
+| DISTINCT products | 16. What are the unique products sold? |
 
 
 **Key Learning:**
@@ -109,7 +110,7 @@ ecommerce-sql-analysis/
 ---
 
 ###  Section 4 — Final Combined Query
-16. Combined all 3 concepts into one clean business report:
+17. Combined all 3 concepts into one clean business report:
 - Removed duplicate orders using `ROW_NUMBER()` inside a CTE
 - Used `LEFT JOIN` to include customers with no orders
 - Used `ISNULL()` to handle missing city, email, and payment info
