@@ -43,10 +43,7 @@ ecommerce-sql-analysis/
 ├── sql/
 │   └── ecommerce_sql_analysis.sql    ← All queries in one file
 └── visuals/
-    ├── Section-1 results in document
-    ├── Section-2 results in document
-    ├── Section-3 results in document
-    └── Section-4 results in document
+    ├── Screenshots of Query Results in Document
 ```
 
 ---
